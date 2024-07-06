@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Operations Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Operations</h1>
+
+        <section id="upload-section">
+            <h2>Upload File</h2>
+            <form id="upload-form">
+                <div class="form-group">
+                    <label for="file">File</label>
+                    <input type="file" id="file" name="file" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" name="description" placeholder="Description" required>
+                </div>
+                <button type="submit" class="btn">Upload</button>
+            </form>
+            <div id="upload-response" class="response"></div>
+        </section>
+
+        <section id="download-section">
+            <h2>Download File</h2>
+            <div class="form-group">
+                <label for="download-title">Title</label>
+                <input type="text" id="download-title" placeholder="Title" required>
+            </div>
+            <button id="download-button" class="btn">Download</button>
+            <div id="download-response" class="response"></div>
+        </section>
+
+        <section id="list-section">
+            <h2>List All Files</h2>
+            <button id="list-button" class="btn">List Files</button>
+            <div id="list-response" class="response"></div>
+        </section>
+
+        <section id="details-section">
+            <h2>Get File Details</h2>
+            <div class="form-group">
+                <label for="details-title">Title</label>
+                <input type="text" id="details-title" placeholder="Title" required>
+            </div>
+            <button id="details-button" class="btn">Get Details</button>
+            <div id="details-response" class="response"></div>
+        </section>
+
+        <section id="search-section">
+            <h2>Find Files</h2>
+            <div class="form-group">
+                <label for="search-title">Title</label>
+                <input type="text" id="search-title" placeholder="Title">
+            </div>
+            <div class="form-group">
+                <label for="search-date">Date</label>
+                <input type="datetime-local" id="search-date">
+            </div>
+            <button id="search-button" class="btn">Find Files</button>
+            <div id="search-response" class="response"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
